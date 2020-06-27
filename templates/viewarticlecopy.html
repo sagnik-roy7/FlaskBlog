@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+{% for article in articles %}
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="#">{{article.author}}</a>
+          <small class="text-muted">{{article.create_date}}</small>
+        </div>
+        <h2><a class="article-title" href="#">{{article.title}}</a></h2>
+        <p class="article-content">{{article.body | safe}}</p>
+      </div>
+    </article>
+{% endfor %}
+
+{% endblock %}

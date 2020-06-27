@@ -1,0 +1,10 @@
+Flask
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+Flask-WTF
+WTForms
+Flask-MySQLdb
+wtforms-validators
